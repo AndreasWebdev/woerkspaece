@@ -1,0 +1,7 @@
+directories:
+  output: dist
+  buildResources: build
+productName: wörkspäce
+win:
+  target: msi
+electronVersion: 2.0.5

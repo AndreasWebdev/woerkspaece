@@ -1,0 +1,29 @@
+{
+  "name": "woerkspaece",
+  "productName": "wörkspäce",
+  "version": "1.0.0",
+  "description": "wörkspäce is a little helper application for your workspace!",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build_app": "electron-packager . --out=dist/app --asar --overwrite --platform=win32 --arch=ia32 --version-string.CompanyName='Andreas Heimann' --icon=icon.ico",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Andreas Heimann",
+  "publisherName": "Andreas Heimann",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^2.0.5",
+    "electron-builder": "^20.22.0",
+    "electron-debug": "^2.0.0",
+    "electron-packager": "^12.1.0"
+  },
+  "build": {
+    "productName": "wörkspäce",
+    "win": {
+      "target": "msi"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wörkspäce</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <i class="material-icons">developer_board</i> Wörkspäce
+      </div>
+      <div class="ui-window-controls">
+        <div class="item ui-window-controls-minimize">
+          <i class="material-icons">minimize</i>
+        </div>
+        <div class="item ui-window-controls-close">
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-timer">
+      <div class="time">0:00:00</div>
+      <div class="settings">
+        <i class="material-icons">settings</i>
+      </div>
+      <div class="settings-panel">
+        <div class="settings-panel-time">
+          <div>At which time do you leave?</div>
+          <input class="setting-time" type="time" />
+          <button class="setting-time-save">Save</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-todo">
+      <textarea placeholder="Todo..."></textarea>
+    </section>
+
+    <section class="section-save">
+      <div class="section-save-saved">
+        <i class="material-icons">check_circle_outline</i> All changes saved!
+      </div>
+      <div class="section-save-saving">
+        <i class="material-icons">save</i> Saving changes
+      </div>
+    </section>
+
+    <script src="https://rezitech.github.com/stash/stash.min.js"></script>
+    <script src="assets/js/window-controls.js"></script>
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/todo.js"></script>
+  </body>
+</html>
