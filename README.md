@@ -1,8 +1,13 @@
 # wörkspäce
-![Screenshot](readme_screenshot.gif)
+![Screenshot](readmeScreenshot.png)
 
 ### What is it?
 wörkspäce is a little helper application for your workspace! It features a todo list area that saves across sessions and a handy timer for the current day.
+
+### features
+* Easy to use UI
+* Countdown Clock
+* Markdown-powered notes section
 
 ### How to use?
 Either open the installer or open the wörkspäce.exe from the portable folder.
