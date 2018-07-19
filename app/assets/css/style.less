@@ -145,10 +145,61 @@ header {
     }
   }
 }
-.section-todo {
+.section-todoTabs {
+  display: flex;
+  background: #1d1d1d;
+  color: #fff;
+
+  & .item {
+    flex: 1;
+    padding: 7px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s ease all;
+    cursor: pointer;
+
+    &.active {
+      background: #fff;
+      color: #000;
+    }
+    &:not(.active):hover {
+      background: rgba(255,255,255,0.1);
+    }
+    &:not(.active):active {
+      background: rgba(255,255,255,0.2);
+    }
+  }
+}
+.section-todoViewer {
   flex: 1;
   height: 100%;
-  display: flex;
+  padding: 15px;
+  display: none;
+  font-size: 12px;
+
+  &.active {
+    display: block;
+  }
+
+  & ul {
+    padding: 0px 30px;
+    margin: 5px 0px;
+  }
+  & p {
+    margin: 5px 0px;
+    padding: 0px;
+  }
+}
+.section-todoEditor {
+  flex: 1;
+  height: 100%;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 
   & textarea {
     flex-grow: 1;

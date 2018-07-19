@@ -151,12 +151,58 @@ header .ui-window-controls .item:active {
 .section-timer .settings-panel .settings-panel-time button:focus {
   outline: 0;
 }
-.section-todo {
+.section-todoTabs {
+  display: flex;
+  background: #1d1d1d;
+  color: #fff;
+}
+.section-todoTabs .item {
+  flex: 1;
+  padding: 7px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+.section-todoTabs .item.active {
+  background: #fff;
+  color: #000;
+}
+.section-todoTabs .item:not(.active):hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.section-todoTabs .item:not(.active):active {
+  background: rgba(255, 255, 255, 0.2);
+}
+.section-todoViewer {
   flex: 1;
   height: 100%;
+  padding: 15px;
+  display: none;
+  font-size: 12px;
+}
+.section-todoViewer.active {
+  display: block;
+}
+.section-todoViewer ul {
+  padding: 0px 30px;
+  margin: 5px 0px;
+}
+.section-todoViewer p {
+  margin: 5px 0px;
+  padding: 0px;
+}
+.section-todoEditor {
+  flex: 1;
+  height: 100%;
+  display: none;
+}
+.section-todoEditor.active {
   display: flex;
 }
-.section-todo textarea {
+.section-todoEditor textarea {
   flex-grow: 1;
   border: 0px;
   padding: 15px;
@@ -165,7 +211,7 @@ header .ui-window-controls .item:active {
   resize: none;
   overflow: scroll;
 }
-.section-todo textarea:focus {
+.section-todoEditor textarea:focus {
   outline: 0;
 }
 .section-save {

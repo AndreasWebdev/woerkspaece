@@ -20,7 +20,9 @@ function createMainWindow() {
 		frame: false,
 		width: 350,
 		height: 720,
-    resizable: false,
+		minWidth: 350,
+		minHeight: 720,
+    resizable: true,
     icon: __dirname + '/app/assets/img/icon_48.png'
 	});
 
