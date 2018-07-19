@@ -30,9 +30,11 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-columns: auto;
+  overflow: hidden;
   -webkit-app-region: no-drag;
   -webkit-user-select: none;
 }
@@ -176,11 +178,14 @@ header .ui-window-controls .item:active {
 .section-todoTabs .item:not(.active):active {
   background: rgba(255, 255, 255, 0.2);
 }
-.section-todoViewer {
+.section-todo {
   flex: 1;
-  height: 100%;
-  padding: 15px;
+  overflow-y: auto;
+}
+.section-todoViewer {
   display: none;
+  padding: 15px;
+  height: 100%;
   font-size: 12px;
 }
 .section-todoViewer.active {
@@ -195,9 +200,8 @@ header .ui-window-controls .item:active {
   padding: 0px;
 }
 .section-todoEditor {
-  flex: 1;
-  height: 100%;
   display: none;
+  height: 100%;
 }
 .section-todoEditor.active {
   display: flex;

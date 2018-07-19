@@ -5,7 +5,7 @@ var uiWindowControlsMinimize = document.querySelector(".ui-window-controls-minim
 var uiWindowControlsClose = document.querySelector(".ui-window-controls-close");
 
 uiWindowControlsInfo.addEventListener('click', function() {
-  alert("== wörkspäce ==\nVersion 1.1.0\n\nDevelopment & Code: Andreas Heimann\nUsed technology: Electron, NodeJS, Showdown, Atom");
+  alert("== wörkspäce ==\nVersion 1.1.1\n\nDevelopment & Code: Andreas Heimann\nUsed technology: Electron, NodeJS, Showdown, Atom");
 });
 
 uiWindowControlsMinimize.addEventListener('click', function() {
